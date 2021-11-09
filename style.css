@@ -7,3 +7,40 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/* navigation bar styling */
+.navigation-bar{
+    position: fixed;
+    width: 100%;
+    background: lightskyblue;
+    font-family: 'Ubuntu', 'Courier New', Courier, monospace;
+}
+
+.navigation-bar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation-bar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navigation-bar .menu li {
+    list-style: none; 
+    display: inline-block;
+}
+.navigation-bar .menu li a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
