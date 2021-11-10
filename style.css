@@ -20,7 +20,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .eduexp, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -246,7 +246,7 @@ section .title::after{
 }
 
 /* services section styling */
-.services, .teams{
+.services, .eduexp{
     color:#fff;
     background: #111;
 }
@@ -365,46 +365,51 @@ section .title::after{
 .skills-content .left .mysql::before{
     width: 70%;
 }
-/* teams section styling */
-.teams .title::after{
-    content: "who with me";
+/* services section styling */
+.services, .eduexp{
+    color:#fff;
+    background: #111;
 }
-.teams .carousel .card{
+.eduexp .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.eduexp .title::after,
+.teams .title::after{
+    background: #111;
+    content: "what i've done";
+}
+.eduexp .eduexp-content .card{
+    width: calc(33% - 20px);
     background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
     text-align: center;
-    overflow: hidden;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
+.eduexp .eduexp-content .card:hover{
     background: rgb(182, 150, 108);
 }
-.teams .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.eduexp .eduexp-content .card .box{
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.eduexp .eduexp-content .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.eduexp .eduexp-content .card i{
+    font-size: 50px;
+    color: rgb(182, 150, 108);
+    transition: color 0.3s ease;
+}
+.eduexp .eduexp-content .card:hover i{
+    color: #fff;
+}
+.eduexp .eduexp-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
-}
-.teams .carousel .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid rgb(182, 150, 108);
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover img{
-    border-color: #fff;
+    color:#fff;
 }
 
 .owl-dots{
