@@ -360,10 +360,10 @@ section .title::after{
     width: 80%;
 }
 .skills-content .left .php::before{
-    width: 50%;
+    width: 80%;
 }
 .skills-content .left .mysql::before{
-    width: 70%;
+    width: 50%;
 }
 /* services section styling */
 .services, .eduexp{
